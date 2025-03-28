@@ -1,0 +1,31 @@
+@import "mixins";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  line-height: normal;
+}
+
+html {
+  color: #2a2e34;
+}
+
+body {
+  min-width: 1155px;
+  @include respond(tablet) {
+    min-width: 1024px;
+  }
+  @include respond(phone) {
+    min-width: 375px;
+  }
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}

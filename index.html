@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="modal" id="orderModal">
+        <div class="modal__content">
+            <button class="modal__close" id="closeModal"><img src="./images/icons/close.svg" alt=""></button>
+            <h2 class="modal__title">Оставить заявку</h2>
+            <form class="modal__form">
+                <div class="modal__input-group">
+                    <div class="modal__input-container">
+                        <input type="text" id="name" class="modal__input" placeholder="ФИО" required>
+                    </div>
+                </div>
+
+                <div class="modal__input-group">
+                    <div class="modal__input-container">
+                        <input type="email" id="email" class="modal__input" placeholder="Почта" required>
+                    </div>
+                </div>
+
+                <div class="modal__input-group">
+                    <div class="modal__input-container">
+                        <input type="tel" id="phone" class="modal__input" placeholder="Телефон" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="modal__submit">Отправить</button>
+
+                <p class="modal__policy">
+                    Нажимая на кнопку «Отправить» вы соглашаетесь с
+                    <a href="#">Политикой обработки персональных данных</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="index.html" class="header__logo"><img src="./images/logo.svg" alt="Логотип пушка"></a>
+
+            </div>
+            <nav class="header__menu" aria-label="Основная навигация">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Этапы работ</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Преимущества</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Портфолио</a></li>
+                    <li class="header__menu-item"><a class="header__menu-link" href="#">Стоимость</a></li>
+                </ul>
+            </nav>
+            <button type="submit" class="header__button" aria-label="Заказать лендинг">Заказать лендинг</button>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero container">
+            <div class="hero__left-wrapper">
+                <h1 class="hero__title">Landing,&nbsp;готовый<br>продавать&nbsp;за&nbsp;<span
+                        class="hero__title-span">14&nbsp;дней</span></h1>
+                <div class="hero__features">
+                    <div class="hero__features-icon">
+                        <img src="/images/icons/fire.svg" alt="Огонь" class="hero__features-icon-img">
+                        <p class="hero__features-desc">уникальный&nbsp;дизайн</p>
+                    </div>
+                    <div class="hero__features-icon">
+                        <img src="/images/icons/ic-calendar-date-month.svg" alt="Календарь"
+                            class="hero__features-icon-img">
+                        <p class="hero__features-desc">фиксированные&nbsp;сроки</p>
+                    </div>
+                </div>
+                <button type="submit" class="hero__btn" aria-label="Получить консультацию">Получить консультацию
+                    <img src="./images/icons/arrow.svg" alt="" aria-hidden="true">
+                </button>
+            </div>
+            <div class="hero__right-wrapper">
+                <img src="./images/wooden-hand-ok.svg" alt="Деревянная рука показывает жест ОК" class="hero__image">
+                <img src="./images/icons/star-small.svg" alt="" class="hero__blurred-star-small hero__star">
+                <div class="hero__blurred-ellipse-small"></div>
+                <img src="./images/icons/star-large.svg" alt="" class="hero__blurred-star-large hero__star">
+                <div class="hero__blurred-ellipse-large"></div>
+                <!-- <div class="hero__msg">
+                    <div class="hero__msg-rectangle">
+                        <p></p>
+                    </div>
+                    <div class="hero__msg-triangle"></div>
+                </div> -->
+
+                <img src="./images/msg-make.svg" alt="" class="hero__msg-make">
+                <img src="./images/msg-notice.svg" alt="" class="hero__msg-notice">
+
+                <img src="./images/msg-block.svg" alt="" class="hero__msg-block">
+
+            </div>
+
+        </section>
+        <section class=" features container">
+            <h2 class="features__title">Проблемы, которые мы решаем</h2>
+            <div class="features__cards">
+                <div class="features__cards-item">
+                    <img src="./images/icons/air-ballon.svg" alt="Воздушный шар" class="features__cards-icon">
+                    <h3 class="features__cards-title">Тестирование</h3>
+                    <p class="features__cards-desc">Поможет протестировать гипотезу и понять направление развития
+                        в digital.</p>
+                </div>
+                <div class="features__cards-item">
+                    <img src="./images/icons/rocket.svg" alt="Ракета" class="features__cards-icon">
+                    <h3 class="features__cards-title">Продажи</h3>
+                    <p class="features__cards-desc">Начать генерировать продажи или сфокусировать клиента на
+                        определенной услуге.</p>
+                </div>
+                <div class="features__cards-item">
+                    <img src="./images/icons/stars.svg" alt="Звезда в руке" class="features__cards-icon">
+                    <h3 class="features__cards-title">Окупаемость</h3>
+                    <p class="features__cards-desc">Посадочная быстрее окупит себя, нежели полноценный сайт, до
+                        которого
+                        нужно “дозреть”.</p>
+                </div>
+                <div class="features__cards-item">
+                    <img src="./images/icons/sync.svg" alt="Синхронизация" class="features__cards-icon">
+                    <h3 class="features__cards-title">Презентация</h3>
+                    <p class="features__cards-desc">Нужно качественно преподнести продукт или компанию, легко !тут
+                        текст
+                        тут
+                        текст!</p>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="consultation container">
+            <div class="consultation__left-wrapper">
+                <h3 class="consultation__title">Продуктовый Landing</h3>
+                <p class="consultation__desc">Под продуктовым мы понимаем лендинг, разработанный <br>под цели вашей
+                    потенциальной аудитории. </p>
+
+                <a href="#" class="consultation__link" aria-label="Получить консультацию">Получить консультацию
+                    <img src="./images/icons/arrow.svg" alt="" width="36px" height="20px" aria-hidden="true"
+                        class="consultation__link-img">
+                </a>
+
+                <div class="consultation__text-block">
+                    Сфокусируем внимание потенциальных клиентов на вашем товаре или услуге.
+                    Не забудем выделить вас на фоне конкурентов.
+                </div>
+
+
+            </div>
+            <div class="consultation__right-wrapper">
+                <img src="./images/laptop.svg" alt="Ноутбук" class="consultation__image">
+            </div>
+        </section>
+
+        <section class="stages container">
+            <h2 class="stages__title">Понятные этапы работ</h2>
+            <div class="stages__grid">
+
+                <div class="stages__items">
+                    <div class="stages__icon-wrapper">
+                        <img src="./images/icons/paper-plane.svg" alt="Бумажный самолет" class="stages__icon">
+                        <p class="stages__label">Старт работ</p>
+                    </div>
+                </div>
+                <div class="stages__blocks">
+                    <div class="stages__grid-block stages__grid-block--blue">
+                        <p class="stages__desc">Онлайн брифинг<br>и подписание договора</p>
+                        <div class="stages__duration">
+                            <img src="./images/icons/icon-clock.svg" alt="Часы" class="stages__duration-icon">
+                            <p class="stages__duration-text">2 дня</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="stages__items">
+                    <div class="stages__icon-wrapper">
+                        <img src="./images/icons/earth.svg" alt="Планета Земля" class="stages__icon">
+                        <p class="stages__label">Исследование</p>
+                    </div>
+                </div>
+                <div class="stages__blocks">
+                    <div class="stages__grid-block stages__grid-block--green">
+                        <p class="stages__desc">Конкурентный аналииз<br>и мудборд</p>
+                        <div class="stages__duration">
+                            <img src="./images/icons/icon-clock.svg" alt="Часы" class="stages__duration-icon">
+                            <p class="stages__duration-text">2 дня</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="stages__items">
+                    <div class="stages__icon-wrapper">
+                        <img src="./images/icons/dektop-shopping-web.svg" alt="Компьютер" class="stages__icon">
+                        <p class="stages__label">Дизайн</p>
+                    </div>
+                </div>
+                <div class="stages__blocks">
+                    <div class="stages__grid-block stages__grid-block--orange">
+                        <p class="stages__desc">Дизайн</p>
+                        <div class="stages__duration">
+                            <img src="./images/icons/icon-clock.svg" alt="Часы" class="stages__duration-icon">
+                            <p class="stages__duration-text">5 дней</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="stages__items">
+                    <div class="stages__icon-wrapper">
+                        <img src="./images/icons/goals.svg" alt="Флажок" class="stages__icon">
+                        <p class="stages__label">Верстка <br> и настройка</p>
+                    </div>
+                </div>
+
+                <div class="stages__blocks">
+                    <div class="stages__grid-block stages__grid-block--lilac">
+                        <p class="stages__desc">Верстка по BeM<br>и настройка форм</p>
+                        <div class="stages__duration">
+                            <img src="./images/icons/icon-clock.svg" alt="Часы" class="stages__duration-icon">
+                            <p class="stages__duration-text">5 дней</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="stages__brace">
+                <img src="./images/brace.svg" alt="Фигурная скобка" class="stages__brace-img">
+                <p class="stages__brace-term">14 дней</p>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

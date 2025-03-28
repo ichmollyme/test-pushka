@@ -1,0 +1,36 @@
+:root {
+  // Основной шрифт (для основного текста)
+  --font-primary: "Montserrat", sans-serif;
+
+  // Акцентный шрифт (для заголовков, выделения)
+  --font-accent: "Geometric", sans-serif;
+
+  // Размеры шрифтов
+  --font-size-xl: 24px;
+  --font-size-lg: 22px;
+  --font-size-md: 18px;
+  --font-size-sm: 16px;
+
+  // Веса шрифтов
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --font-line-height-auto: normal;
+
+  // Акцентные цвета
+  --accent-color-blue: #206ef8;
+  --accent-color-green: #00c299;
+  --accent-color-orange: #ff6442;
+  --accent-color-lilac: #c243a1;
+  //  Светлые цвета
+  --background-light-blue: #f2f6fe;
+  --light-green: #eefffc;
+  --light-orange: #feeeed;
+  --light-lilac: #ffecfa;
+  --light-gray: #f2f2f2;
+
+  --color-black: #2a2e34;
+  --color-gray: #6b7280;
+  --middle-gray: #a4b3d4;
+}

@@ -1,0 +1,191 @@
+.stages {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__title {
+    @include text-heading-2;
+    text-align: center;
+    margin-bottom: 47px;
+    @include respond(tablet) {
+      margin-bottom: 27px;
+    }
+    @include respond(phone) {
+      @include text-heading-3;
+      width: 375px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 274px repeat(1, 1fr);
+    grid-template-rows: repeat(4, 150px);
+    align-items: center;
+    width: 1158px;
+    position: relative;
+    margin-bottom: 43px;
+    @include respond(tablet) {
+      width: 964px;
+      grid-template-columns: 307px repeat(1, 1fr);
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 16px;
+    }
+  }
+  &__icon-wrapper {
+    grid-column: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 16px;
+    align-items: center;
+    height: 100%;
+    box-sizing: border-box;
+  }
+  &__label {
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-line-height-auto);
+  }
+  &__desc {
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--font-line-height-auto);
+  }
+  &__duration {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    &-icon {
+      width: 14px;
+      height: 14px;
+    }
+    &-text {
+      color: var(--middle-gray);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-bold);
+    }
+  }
+  &__grid-block {
+    grid-column: 2;
+    position: relative;
+    width: 274px;
+    height: 116px;
+    padding: 24px 32px;
+    border-radius: 8px 16px 16px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 7px;
+      height: 116px;
+      border-radius: 16px 0 0 16px;
+    }
+    &--blue {
+      background-color: var(--background-light-blue);
+      color: var(--accent-color-blue);
+      &::before {
+        background-color: var(--accent-color-blue);
+      }
+    }
+    &--green {
+      background-color: var(--light-green);
+      color: var(--accent-color-green);
+      &::before {
+        background-color: var(--accent-color-green);
+      }
+    }
+    &--orange {
+      background-color: var(--light-orange);
+      color: var(--accent-color-orange);
+      &::before {
+        background-color: var(--accent-color-orange);
+      }
+    }
+    &--lilac {
+      background-color: var(--light-lilac);
+      color: var(--accent-color-lilac);
+      &::before {
+        background-color: var(--accent-color-lilac);
+      }
+    }
+    @include respond(phone) {
+      width: 335px;
+    }
+  }
+  &__blocks,
+  &__items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border-bottom: 1px solid var(--light-gray);
+  }
+  &__items {
+    border-right: 1px solid var(--light-gray);
+    @include respond(phone) {
+      display: none;
+    }
+  }
+  &__items:nth-child(7),
+  &__blocks:last-child {
+    border-bottom: none;
+  }
+  &__blocks {
+    grid-column: 2;
+    display: grid;
+    @include respond(phone) {
+      display: flex;
+    }
+
+    &:nth-child(2) {
+      grid-template-columns: 20px 1fr;
+    }
+    &:nth-child(4) {
+      grid-template-columns: 216px 1fr;
+      @include respond(tablet) {
+        grid-template-columns: 137px 1fr;
+      }
+    }
+    &:nth-child(6) {
+      grid-template-columns: 412px 1fr;
+      @include respond(tablet) {
+        grid-template-columns: 257px 1fr;
+      }
+    }
+    &:nth-child(8) {
+      grid-template-columns: 608px 1fr;
+      @include respond(tablet) {
+        grid-template-columns: 382px 1fr;
+      }
+    }
+  }
+  &__brace {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    right: 0;
+    gap: 24px;
+    &-img {
+      width: 882px;
+      @include respond(tablet) {
+        width: 689px;
+      }
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    &-term {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-bold);
+      color: var(--accent-color-blue);
+    }
+  }
+}
